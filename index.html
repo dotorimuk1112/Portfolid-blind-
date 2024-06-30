@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>최현규 포트폴리오</title>
+    <link rel="icon" type="image/x-icon" href="assets/python.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Do Hyeon', sans-serif;
+            font-size: 20px;
+        }
+
+        h4 {
+            width: 800px;
+        }
+
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 2em;
+        }
+
+        .highlight {
+            color: steelblue;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h1,
+        h2,
+        h3,
+        p {
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 768px) {
+            h1,
+            h2,
+            h3,
+            p {
+                font-size: 1em;
+            }
+        }
+
+        .hero-section {
+            background-image: url('assets/background_img.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+        }
+        .hero-section h1 {
+            font-size: 2em;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            min-width: 1200px;
+        }
+
+        .card-left img {
+            border-radius: 50%;
+            width: 150px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-right {
+            margin-left: 20px;
+            max-width: 100%;
+            width: 80%; /* 필요한 만큼 너비를 조정 */
+            max-width: 1200px; /* 최대 너비를 설정하여 화면에 맞게 조절 */
+            margin: 0 auto; /* 가운데 정렬 */
+            padding: 20px; /* 내부 여백 */
+        }
+
+        .section {
+            padding: 60px 0;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skill-item {
+            flex-basis: 10%;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .experience-card {
+            display: flex;
+            align-items: center;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .experience-card img {
+            max-width: 150px;
+            min-height: 190px;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .project-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+
+        .project-header h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .project-header h4 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .award-header h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .award-header h4 {
+            font-size: 0.8em;
+            margin-bottom: 10px;
+        }
+
+        .project-body {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .project-content {
+            flex-basis: 60%;
+        }
+
+        .project-images {
+            flex-basis: 35%;
+            text-align: center;
+        }
+
+        .project-images img {
+            max-width: 100%;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        .custom-list,
+        .sub-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin-top: 0px; /* 필요한 만큼 줄임 */
+            margin-bottom: 0; /* 하단 여백을 줄임 */
+        }
+
+        .custom-list>li {
+            margin-bottom: 10px;
+        }
+
+        .large-font {
+            font-size: 1.2em;
+            font-family: "Do Hyeon", sans-serif;
+            color: #000000;
+            margin-bottom: 2px; /* 필요한 만큼 줄임 */
+        }
+        .large-font2 {
+            font-size: 1.5em;
+            font-family: "Do Hyeon", sans-serif;
+            color: #000000;
+            margin-bottom: 2px; /* 필요한 만큼 줄임 */
+        }
+        .large-font3 {
+            font-size: 1.3em;
+            font-family: "Do Hyeon", sans-serif;
+            color: #000000;
+            margin-bottom: 2px; /* 필요한 만큼 줄임 */
+        }
+        
+
+        .sub-list>li {
+            margin-left: 20px;
+            list-style-type: disc;
+        }
+        .experience-section {
+            text-align: center;
+        }
+    
+        .experience-section h1 {
+            margin-bottom: 20px;
+            margin-top: 10px;
+            font-size: 2.3em;
+        }
+
+        .experience-section h2 {
+            margin-bottom: 20px;
+            font-size: 1.7em;
+        }
+
+        .experience-section p {
+            margin-bottom: 5px;
+            font-size: 1em;
+        }
+        
+        .skills-section {
+            text-align: center;
+        }
+        .skills-section h1 {
+            margin-bottom: 20px;
+            margin-top: 10px;
+            font-size: 2.3em;
+        }
+    
+        .experience-card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    
+        .experience-card {
+            display: flex;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            width: 90%;
+            max-width: 600px;
+        }
+        .experience-card h1 {
+            margin-top: 10px;
+        }
+    
+        .experience-card img {
+            border-radius: 10px;
+            margin-right: 20px;
+            min-height: 190px;
+        }
+    
+        .experience-content {
+            text-align: left;
+        }
+        .experience-content h2{
+            margin-bottom: 0%;
+        }
+        .projects-section {
+            text-align: center;
+        }
+    
+        .projects-section .sub-header {
+            text-align: center;
+        }
+    
+        .projects-card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 0px;
+        }
+    
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            width: 90%;
+            max-width: 600px;
+        }
+    
+        .project-card img {
+            border-radius: 10px;
+            margin-top: 10px;
+            max-width: 100%;
+        }
+    
+        .project-content {
+            text-align: left;
+        }
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            max-width: 100%; /* 카드의 최대 너비를 100%로 설정 */
+        }
+    
+        .project-card img {
+            border-radius: 10px;
+            margin-top: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+    
+        .project-images img {
+            width: 100%; /* 이미지 크기를 조절합니다 */
+            max-height: 200px; /* 최대 높이를 설정합니다 */
+            object-fit: cover; /* 이미지 비율을 유지하면서 영역에 맞게 조절 */
+        }
+    
+        .project-content {
+            text-align: left;
+        }
+        .projects-section {
+            text-align: center;
+        }
+    
+        .projects-section .sub-header {
+            text-align: center;
+        }
+    
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            max-width: 100%; /* 카드의 최대 너비를 100%로 설정 */
+        }
+    
+        .project-card img {
+            border-radius: 10px;
+            margin-top: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+    
+        .project-images img {
+            width: 100%; /* 이미지 크기를 조절합니다 */
+            max-height: 300px; /* 최대 높이를 설정합니다 */
+            object-fit: cover; /* 이미지 비율을 유지하면서 영역에 맞게 조절 */
+        }
+    
+        .project-content {
+            text-align: left;
+        }
+        
+        /* 카드 너비 조정 */
+        .col-md-6 {
+            max-width: 48%; /* 카드 간격을 유지하기 위해 48%로 설정 */
+            margin: 1%;
+        }
+        .projects-section {
+            text-align: center;
+        }
+    
+        .projects-section .sub-header {
+            text-align: center;
+            margin-top: 20px;
+        }
+    
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            min-width: 100%; /* 카드의 최대 너비를 100%로 설정 */
+        }
+    
+        .project-card img {
+            border-radius: 10px;
+            margin-top: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+    
+        .project-images img {
+            width: 100%; /* 이미지 크기를 조절합니다 */
+            max-height: 400px; /* 최대 높이를 설정합니다 */
+            object-fit: cover; /* 이미지 비율을 유지하면서 영역에 맞게 조절 */
+        }
+    
+        .project-content {
+            text-align: left;
+        }
+        
+        /* 카드 너비 조정 */
+        .col-md-6 {
+            max-width: 48%; /* 카드 간격을 유지하기 위해 48%로 설정 */
+            margin: 1%;
+        }
+
+        .projects-section h1 {
+            font-size: 2.3em; /* Projects 섹션의 h1 글씨 크기 조정 */
+            margin-top: 10px;
+        }
+        .projects-section h3 {
+            font-size: 1.5em; /* Projects 섹션의 h1 글씨 크기 조정 */
+        }
+        .projects-section h4 {
+            font-size: 1.3em; /* Projects 섹션의 h1 글씨 크기 조정 */
+        }
+        .projects-section p {
+            font-size: 1em; /* Projects 섹션의 h1 글씨 크기 조정 */
+        }
+        .hero-section .card-right {
+            color: black; /* Hero section의 텍스트 색상을 검정으로 변경 */
+        }
+        footer {
+            text-align: center;
+        }
+        
+        footer a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 2rem; /* 아이콘 크기를 조정 */
+        }
+        
+        footer p, footer h3 {
+            margin-bottom: 10px; /* 텍스트 간 간격 조정 */
+        }
+        
+        footer {
+            text-align: center;
+        }
+        
+        footer a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 2rem; /* 아이콘 크기를 조정 */
+        }
+        
+        footer p, footer h3 {
+            margin-bottom: 10px; /* 텍스트 간 간격 조정 */
+        }
+        
+    
+        footer {
+            text-align: center;
+        }
+        
+        footer a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 2rem; /* 아이콘 크기를 조정 */
+        }
+        
+        footer p, footer h3 {
+            margin-bottom: 10px; /* 텍스트 간 간격 조정 */
+        }
+        footer {
+            text-align: center;
+        }
+        
+        footer a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 2rem; /* 아이콘 크기를 조정 */
+        }
+        
+        footer p, footer h3 {
+            margin-bottom: 10px; /* 텍스트 간 간격 조정 */
+        }
+        
+        footer .d-flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* 아이콘과 텍스트를 세로로 정렬 */
+        }
+        
+        footer .d-flex a {
+            margin: 10px; /* 아이콘 간 간격 조정 */
+        }
+        
+        footer {
+            text-align: center;
+        }
+        
+        footer a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 2rem; /* 아이콘 크기를 조정 */
+        }
+        
+        footer p, footer h3 {
+            margin-bottom: 10px; /* 텍스트 간 간격 조정 */
+        }
+        
+        footer .mt-3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px; /* 아이콘과 텍스트 사이 간격 조정 */
+        }
+        
+        footer .mt-3 a {
+            margin: 0 10px;
+        }
+        
+        footer {
+            text-align: center;
+        }
+        
+        footer a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 2rem; /* 아이콘 크기를 조정 */
+        }
+        
+        footer p {
+            margin-bottom: 10px; /* 텍스트 간 간격 조정 */
+        }
+
+        footer h3 {
+            margin-bottom: 10px; /* 텍스트 간 간격 조정 */
+            font-size: 1.7em; /* 아이콘 크기를 조정 */
+        }
+        
+        footer .mt-3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px; /* 아이콘과 텍스트 사이 간격 조정 */
+        }
+        
+        footer .mt-3 a {
+            margin: 0 10px;
+        }
+
+        footer {
+            text-align: center;
+        }
+        
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 2rem; /* 아이콘 크기를 조정 */
+        }
+        
+        footer p, footer h3 {
+            margin-bottom: 10px; /* 텍스트 간 간격 조정 */
+            text-align: center;
+        }
+
+        /* 각 목록 항목에 대해 새로운 글머리 기호 스타일을 추가 */
+        ul.custom-list > li:before {
+            content: '•'; /* 글머리 기호로 사용할 문자 */
+            color: black; /* 글머리 기호의 색상 */
+            display: inline-block; 
+            width: 1em; /* 글머리 기호의 가로 크기 */
+            margin-left: -1em; /* 글머리 기호의 위치 조정 */
+        }
+
+        ul.sub-list > li:before {
+            color: black; /* 서브 글머리 기호의 색상 */
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        footer .btn {
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .email-copy {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px; /* 이메일 주소와 버튼 사이의 간격 */
+        }
+        
+        .email-copy p {
+            margin: 0;
+        }
+
+        #copy-button {
+            padding: 2px 6px; /* 버튼 크기 조정 */
+            font-size: 0.9rem; /* 버튼 텍스트 크기 조정 */
+            margin-bottom: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            footer p, footer h3 {
+                margin-bottom: 20px; /* 모바일에서의 텍스트 간 간격 조정 */
+            }
+        
+            footer a {
+                margin: 10px; /* 모바일에서의 아이콘 간 간격 조정 */
+            }
+        }
+
+        .introduce {
+            width: auto; /* 또는 width: 100%; */
+            max-width: 100%; /* 부모 컨테이너를 넘지 않도록 설정 */
+            text-align: center;
+        }
+        .introduce h3, h5{
+            text-align: center;
+        }
+        .lead p {
+            text-align: left;
+            font-size: 1.5em;
+        }
+
+        .card-right {
+            flex-grow: 1; /* 플렉스 컨테이너 내에서 자라도록 설정 */
+            width: 100%; /* 필요한 만큼 너비를 조정 */
+            min-width: 850px;
+            max-width: 1200px; /* 최대 너비를 설정하여 화면에 맞게 조절 */
+            margin: 0 auto; /* 가운데 정렬 */
+            padding: 20px; /* 내부 여백 */
+        }
+
+        .fw-bolder {
+            font-weight: bolder;
+        }
+        .highlight2 {
+            color: blue; /* 빨간색으로 변경 */
+        }
+        .highlight3 {
+            color: rgb(255, 136, 0); /* 빨간색으로 변경 */
+        }
+
+
+        .container {
+            padding: 10px; /* Reduced from 20px to 10px */
+        }
+    </style>
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <div class="container px-4">
+            <a class="navbar-brand" href="#page-top">Python Specialist, 최현규입니다.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#Skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Experiences">Experiences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Award">Award</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Projects">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="card">
+            <div class="card-left">
+                <img src="assets/photo/1.jpg" alt="Profile Photo" class="profile-photo">
+            </div>
+            <div class="card-right">
+                <h1 class="fw-bolder">Python Specialist, 최현규입니다.</h1>
+                <p class="large-font3">
+                    AI 엔지니어로서 다양한 기술 스택과 다수의 프로젝트 경험을 보유하고 있습니다. <br>
+                    <span class="highlight">AI, 데이터 파이프라인 구축 및 분석, 웹 개발</span> 등 다양한 분야에서 활약할 수 있습니다.
+                </p>
+                <ul class="custom-list">
+                    <p class="large-font2">전 공</p>
+                    <ul class="sub-list reduced-margin">
+                        <li>정치외교학과 전공</li>
+                        <li>AI빅데이터융합경영학 부전공</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="Skills" class="section-light-gray">
+        <div class="skills-section">
+            <h1>💻Skills</h1>
+            <div class="introduce">
+                <h3>
+                    AI 모델링, AI 모델을 탑재한 웹 서비스 개발에 특화되어 있습니다.<br>
+                    데이터 전처리부터 소프트웨어 패키징 및 배포까지, 파이프라인 전반에 걸쳐 필요한 기술을 모두 보유중입니다.
+                </h3>
+            </div>
+            <div class="skills">
+                <div class="skill-item">
+                    <img src="assets/icons/python.png" alt="Python">
+                    <p>Python</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icons/r_icon.png" alt="R">
+                    <p>R</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icons/pandas.png" alt="Pandas">
+                    <p>Pandas</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icons/tensorflow.png" alt="Tensorflow">
+                    <p>Tensorflow</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icons/django.png" alt="Django">
+                    <p>Django</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icons/streamlit.png" alt="Streamlit">
+                    <p>Streamlit</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icons/aws.png" alt="AWS">
+                    <p>AWS</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icons/superset.png" alt="Superset">
+                    <p>Superset</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icons/ELK.png" alt="ELK">
+                    <p>ELK</p>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="skill-item">
+                    <img src="assets/icons/java.png" alt="Java">
+                    <p>Java</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icons/mysql.png" alt="MySQL">
+                    <p>MySQL</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icons/scikit-learn.png" alt="Scikit-learn">
+                    <p style="font-size: 0.8em; width: 90.1px; height: 35.99px; text-align: center; line-height: 35.99px;">Scikit-learn</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icons/pytorch.png" alt="Pytorch">
+                    <p>Pytorch</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icons/flask.png" alt="Flask">
+                    <p>Flask</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icons/spring.png" alt="Spring">
+                    <p>Spring</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icons/linux.png" alt="Linux">
+                    <p>Linux</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icons/docker.png" alt="Docker">
+                    <p>Docker</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icons/airflow.png" alt="Airflow">
+                    <p>Airflow</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiences section -->
+    <section id="Experiences" class="section-white">
+        <div class="experience-section">
+            <h1>🎨Experiences</h1>
+            <div class="experience-card-container">
+                <div class="experience-card">
+                    <img src="assets/photo/2.jpg" alt="경험 이미지" width="150" height="190">
+                    <div class="experience-content">
+                        <h2>AI엔지니어링 부트캠프</h2>
+                        <p>2023.11 - 2024.05</p>
+                        <p>AI 엔지니어로서의 주요 기술 스택을 학습했습니다. <br> 다양한 기술 스택을 프로젝트를 통해 체화했습니다.</p>
+                        <p class="large-font" style="color: darkblue;">[주요 프로젝트]</p>    
+                        <li style="color: dodgerblue;"><아워카> 프로젝트</li>
+                            <li style="color: dodgerblue;">YES24 베스트셀러 데이터 ETL 프로세스</li>
+                            <li style="color: dodgerblue;">How Was Your Luck?(ELK-Streamlit)</li>
+                    </div>
+                </div>
+                <div class="experience-card">
+                    <img src="assets/photo/3.jpg" alt="경험 이미지">
+                    <div class="experience-content">
+                        <h2>대한민국 육군, 장교</h2>
+                        <p>2021.03 - 2023.06</p>
+                        <p>육군 장교로서 2년 4개월 간 복무하며 <br> 조직 적응력, 소통능력, 업무 처리 능력을 길렀습니다.</p>
+                        <p class="large-font" style="color: darkblue;">[주요 업무]</p>
+                            <li style="color: dodgerblue;">지휘관 보좌</li>
+                            <li style="color: dodgerblue;">부대 홍보 업무</li>
+                            <li style="color: dodgerblue;">언론 응대 업무</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Award" class="section-light-gray">
+        <div class="projects-section">
+            <h1>🏆Award</h1>
+            <div class="container">
+                    <div class="project-card">
+                        <div class="award-header">
+                            <h3>공공데이터 활용 경진대회 <span class="highlight3">장려상</span></h3>
+                            <h4>📄법안 유사도 분석기, 입법 '똗'보기</h4>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-content">
+                                <span class="highlight2">[서비스 개요]</span>
+                                <p>Gemini 모델 활용 문서 키워드 추출 및 <br> Bert 모델 활용 법안 유사도 분석 서비스</p>
+                                <span class="highlight2">[주요 개발 내용]</span>
+                                - Flask 백엔드 서버 개발 <br> - LLM 모델(Gemini) API 호출 <br> -  키워드 추출 모듈 파트 개발
+                                <a class="btn btn-primary" href="projects/assembly.html">자세히 보기</a>
+                            </div>
+                            <div class="project-images">
+                                <img src="assets/assembly/Untitled 4.png" alt="assembly">
+                            </div>
+                        </div>
+                        <div>
+                            [주요 기술 스택]
+                            <div>
+                                <img src="assets/icons/flask.png" alt="flask" style="width:50px;height:50px; border: 0px;">
+                                <img src="assets/icons/spring.png" alt="spring" style="width:50px;height:50px; border: 0px;">
+                                <img src="assets/icons/gemini.png" alt="gemini" style="width:50px;height:50px; border: 0px;">
+                                <img src="assets/icons/bert.png" alt="bert" style="width:50px;height:50px; border: 0px;">
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section id="Projects" class="section-white">
+        <div class="projects-section">
+            <h1>🛠️Projects</h1>
+            <h3 class="sub-header">🌐Back-end & Data pipeline & Data analysis</h3>
+            <div class="container" style="padding: 0px;">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3>🚗AI 중고차 거래 플랫폼, 아워카</h3>
+                            </div>
+                            <div class="project-body">
+                                <div class="project-content">
+                                    <span class="highlight2">[프로젝트 개요]</span>
+                                    <p>정보불균형 해소, 의사결정 지원 목적의 <br> AI 모델 다수 탑재 중고차 거래 플랫폼</p>
+
+                                    <span class="highlight2">[주요 개발 내용]</span>
+                                    - Django 백엔드 서버 개발 <br> 
+                                    - UI 개발(Django 템플릿) <br>
+                                    - AI 모델 3종 구축 <br> 
+                                    - 4종 주요 모듈 개발(감가상각 그래프,<br> 가격 추천 등) <br> 
+                                    - 데이터 모델링 <br> 
+                                    <a class="btn btn-primary" href="projects/ourcar.html">자세히 보기</a>
+                                </div>
+                                <div class="project-images">
+                                    <img src="assets/ourcar/ourcar1.png" alt="ourcar">
+                                    <img src="assets/ourcar/ourcar2.png" alt="ourcar">
+                                </div>
+                            </div>
+                            <div>
+                                [주요 기술 스택]
+                                <div>
+                                    <img src="assets/icons/django.png" alt="django" style="width:50px;height:50px; border: 0px;">
+                                    <img src="assets/icons/scikit-learn.png" alt="Docker" style="width:50px;height:50px; border: 0px;">
+                                    <img src="assets/icons/pytorch.png" alt="Pytorch" style="width:50px;height:50px; border: 0px;">
+                                    <img src="assets/icons/aws.png" alt="AWS" style="width:50px;height:50px; border: 0px;" >
+                                    <img src="assets/icons/airflow.png" alt="airflow" style="width:50px;height:50px; border: 0px;">
+                                    <img src="assets/icons/docker.png" alt="docker" style="width:50px;height:50px; border: 0px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3>📚YES24 베스트셀러 데이터 ETL 프로세스</h3>
+                            </div>
+                            <div class="project-body">
+                                <div class="project-content">
+                                    <span class="highlight2">[프로젝트 개요]</span>
+                                    <p>베스트셀러 데이터 크롤링/전처리/시각화 자동화 프로젝트 <br> Airflow를 활용하여 모든 과정이 자동화</p>
+                                    <span class="highlight2">[주요 개발 내용]</span>
+                                    - Airflow DAG 개발 <br>
+                                    - 데이터 크롤링 모듈 개발(BS4) <br> 
+                                    - 데이터 전처리 모듈 개발(Pandas) <br>
+                                    - 데이터 적재 모듈 개발(PostgreSQL) <br>
+                                    <a class="btn btn-primary" href="projects/ETL.html">자세히 보기</a>
+                                </div>
+                                <div class="project-images">
+                                    <img src="assets/ETL/airflow.png" alt="ETL">
+                                </div>
+                            </div>
+                            <div>
+                                [주요 기술 스택]
+                                <div>
+                                    <img src="assets/icons/postgresql.png" alt="postgresql" style="width:50px;height:50px; border: 0px;">
+                                    <img src="assets/icons/airflow.png" alt="airflow" style="width:50px;height:50px; border: 0px;">
+                                    <img src="assets/icons/pandas.png" alt="pandas" style="width:50px;height:50px; border: 0px;">
+                                    <img src="assets/icons/bs4.png" alt="bs4" style="width:50px;height:50px; border: 0px;">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3>🍀How Was Your Luck?</h3>
+                            </div>
+                            <div class="project-body">
+                                <div class="project-content">
+                                    <span class="highlight2">[프로젝트 개요]</span>
+                                    <p>게임 재화 성공률 시각화 서비스 <br> 실제 넥슨 OpenAPI로 실사용 가능</p>
+                                    <span class="highlight2">[주요 개발 내용]</span>
+                                    - 넥슨 OpenAPI 호출 <br>
+                                    - 데이터 적재 환경 구축(ELK 서버) <br>
+                                    - Streamlit 인터페이스 개발 <br>
+                                    <a class="btn btn-primary" href="projects/ELK_Streamlit.html">자세히 보기</a>
+                                </div>
+                                <div class="project-images">
+                                    <img src="assets/ELK_Streamlit/proba.png" alt="ELK_Streamlit">
+                                </div>
+                            </div>
+                            <div>
+                                [주요 기술 스택]
+                                <div>
+                                    <img src="assets/icons/ELK.png" alt="ELK" style="width:50px;height:50px; border: 0px;">
+                                    <img src="assets/icons/streamlit.png" alt="streamlit" style="width:50px;height:50px; border: 0px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3>💬최근 관심 분야: RAG</h3>
+                            </div>
+                            <div class="project-body">
+                                <div class="project-content">
+                                    <p>최근에는 RAG로 비즈니스 목적에 맞는 <br> 챗봇을 구축하는 것에 관심이 있습니다. <br></p>
+                                    <p>상품의 특징을 간략하게 작성하면 <br> 언어 모델이 리뷰를 작성해주는, <br> 마케팅 보조 서비스를 개발중입니다.</p>
+                                </div>
+                                <div class="project-images">
+                                    <img src="assets/rag1.png" alt="RAG">
+                                    <img src="assets/rag2.png" alt="RAG">
+                                </div>
+                            </div>
+                            <div>
+                                [주요 기술 스택]
+                                <div>
+                                    <img src="assets/icons/gemini.png" alt="gemini" style="width:50px;height:50px; border: 0px;">
+                                    <img src="assets/icons/gpt.png" alt="gpt" style="width:50px;height:50px; border: 0px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="projects-section">
+            <h3 class="sub-header">🧠ML/DL</h3>
+            서비스에 접목하기 위해 데이터 확보부터 성능 개선까지 모든 과정을 직접 수행했습니다.
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3>💸차량 가격 예측 모델</h3>
+                            </div>
+                            <div class="project-body">
+                                <div class="project-content">
+                                    <span class="highlight2">[모델 목적]</span>
+                                    - 중고차 적정가 추천 및 감가 상각 예측
+                                    <span class="highlight2">[학습 데이터]</span>
+                                    - 크롤링 중고차 데이터 23,597건
+                                    <span class="highlight2">[모델]</span>
+                                    - RandomForest Regressor
+                                    <span class="highlight2">[특징]</span>
+                                    - 100여종의 차종별로 모두 다른 예측 <br>모델을 적용하여 높은 정확도가 특징
+                                    <a class="btn btn-primary" href="car_price_prediction.html">자세히 보기</a>
+                                </div>
+                                <div class="project-images">
+                                    <img src="assets/car_price_pred.png" alt="Car Price Prediction">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3>💥차량 파손 탐지 모델</h3>
+                            </div>
+                            <div class="project-body">
+                                <div class="project-content">
+                                    <span class="highlight2">[모델 목적]</span>
+                                    - 차량 파손 탐지로 정보 불균형 해소
+                                    <span class="highlight2">[학습 데이터]</span>
+                                    - 쏘카 제공 파손 차량 데이터 50,445건
+                                    <span class="highlight2">[모델]</span>
+                                    - YoloV8 객체 탐지 모델
+                                    <a class="btn btn-primary" href="car_damage_detection.html">자세히 보기</a>
+                                </div>
+                                <div class="project-images">
+                                    <img src="assets/damage_detection.png" alt="Car Damage Detection">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3>💰고객 예산 추천 모델</h3>
+                            </div>
+                            <div class="project-body">
+                                <div class="project-content">
+                                    <span class="highlight2">[모델 목적]</span>
+                                    - 첫 중고차 구매자를 위한 적정 예산 추천
+                                    <span class="highlight2">[학습 데이터]</span>
+                                    - W사 신용카드 데이터 5,382,734건
+                                    <span class="highlight2">[모델]</span>
+                                    - Xgboost Regressor
+                                    <span class="highlight2">[특징]</span>
+                                    - 고객별 차량 가액이라는 가상 데이터를 <br> 역공학하여 구축 <br>
+                                    - 높은 발전가능성(마이데이터 연동 등)
+                                    <a class="btn btn-primary" href="car_budget_recommendation.html">자세히 보기</a>
+                                </div>
+                                <div class="project-images">
+                                    <img src="assets/ourcar/budget.png" alt="Car Budget Recommendation">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3>호텔 예약 취소 예측 모델</h3>
+                            </div>
+                            <div class="project-body">
+                                <div class="project-content">
+                                    <span class="highlight2">[모델 목적]</span>
+                                    - 호텔 수요 예측을 위한 취소 거래 분류
+                                    <span class="highlight2">[학습 데이터]</span>
+                                    - 호텔 예약 내역 83,574건
+                                    <span class="highlight2">[모델]</span>
+                                    - Xgboost Classifier
+                                    <span class="highlight2">[정확도]</span>
+                                    - 95%
+                                    <a class="btn btn-primary" href="hotel_cancel_prediction.html">코드 자세히 보기</a>
+                                </div>
+                                <div class="project-images">
+                                    <img src="assets/hotel_cancel.jpg" alt="hotel_cancel">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <div>
+                    <h3 class="m-0 text-white" style="text-align: center;">Contact Me</h3>
+                </div>
+                <div class="email-copy">
+                    <p class="m-0 text-white" style="display: inline-block;">E-mail: chhyky12@gmail.com</p>
+                    <button id="copy-button" class="btn btn-outline-light btn-sm">주소 복사</button>
+                </div>
+                <div class="mt-3">
+                    <a href="https://github.com/dotorimuk1112" target="_blank">
+                        <i class="fab fa-github fa-2x text-white mx-3"></i>
+                    </a>
+                    <a href="mailto:chhyky12@gmail.com" target="_blank">
+                        <i class="fas fa-envelope fa-2x text-white mx-3"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap core JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Core theme JS -->
+    <script>
+        document.getElementById('copy-button').addEventListener('click', function() {
+            const email = 'chhyky12@gmail.com';
+            navigator.clipboard.writeText(email).then(() => {
+                alert('이메일 주소가 복사되었습니다.');
+            }).catch(err => {
+                alert('클립보드 복사에 실패했습니다. ' + err);
+            });
+        });
+    </script>
+</body>
+
+</html>
